@@ -1,0 +1,15 @@
+apiVersion: serving.kserve.io/v1alpha1
+kind: ServingRuntime
+metadata:
+  name: example-runtime
+spec:
+  supportedModelFormats:
+    - name: example-format
+      version: "1"
+      autoSelect: true
+  containers:
+    - name: kserve-container
+      image: examplemodelserver:latest
+      args:
+        - --model_dir=/mnt/models
+        - --http_port=8080
