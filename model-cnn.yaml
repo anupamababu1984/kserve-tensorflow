@@ -2,7 +2,7 @@ apiVersion: "serving.kserve.io/v1beta1"
 kind: "InferenceService"
 metadata:
   name: "model-cnn"
-  namespace: "kserve-test"
+  namespace: kserve-test
 spec:
   predictor:
     serviceAccountName: sa
