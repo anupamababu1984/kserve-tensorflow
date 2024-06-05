@@ -8,7 +8,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 model = tf.keras.models.load_model('my_model.h5')
 
 # Define the directory to save the model
-save_dir = '/c/Users/awsli/kserve-tensorflow/saved_model'
+save_dir = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model'
 
 try:
     # Save the model in the TensorFlow SavedModel format
