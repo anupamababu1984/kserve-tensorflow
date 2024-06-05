@@ -6,7 +6,7 @@ import shutil
 pb_model_dir = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model'
 
 # Name of the .pb model file
-pb_model_file = 'cmodel.pb'
+pb_model_file = 'saved_model.pb'
 
 # Output tar.gz file path
 output_tar_gz_file = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\saved_model.tar.gz'
