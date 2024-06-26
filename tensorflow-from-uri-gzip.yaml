@@ -5,4 +5,4 @@ metadata:
 spec:
   predictor:
     tensorflow:
-      storageUri: https://raw.githubusercontent.com/tduffy000/kfserving-uri-examples/master/tensorflow/frozen/model_artifacts.tar.gz
+      storageUri: https://raw.githubusercontent.com/anupamababu1984/kserve-tensorflow/blob/main/saved_model/saved_model.tar.gz
