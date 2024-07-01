@@ -5,4 +5,4 @@ metadata:
 spec:
   predictor:
     tensorflow:
-      storageUri: https://raw.githubusercontent.com/anupamababu1984/kserve-tensorflow/main/saved_model/saved_model.zip
+      storageUri: https://raw.githubusercontent.com/anupamababu1984/kserve-tensorflow/main/saved_model/saved_model.tar.gz
