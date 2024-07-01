@@ -3,7 +3,7 @@ import tarfile
 import shutil
 
 # Path to the directory containing the .pb model file
-pb_model_dir = 'C:\\Users\\awsli\\kserve-tensorflow\\0001\\saved_model'
+pb_model_dir = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\0001'
 
 # Name of the .pb model file
 pb_model_file = 'saved_model.pb'
