@@ -3,13 +3,13 @@ import tarfile
 import shutil
 
 # Path to the directory containing the .pb model file
-pb_model_dir = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model'
+pb_model_dir = 'C:\\Users\\awsli\\kserve-tensorflow\\0001\\saved_model'
 
 # Name of the .pb model file
 pb_model_file = 'saved_model.pb'
 
 # Output tar.gz file path
-output_tar_gz_file = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\0001\\saved_model.tar.gz'
+output_tar_gz_file = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\saved_model.tar.gz'
 
 try:
     # Create a temporary directory to hold the .pb model file
