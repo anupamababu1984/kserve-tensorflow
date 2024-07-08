@@ -13,6 +13,6 @@ def convert_pb_to_zip(pb_file_path, zip_file_path):
 
 # Replace 'yourfile.pb' and 'yourfile.zip' with your file paths
 pb_file_path = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\1
-zip_file_path = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\1\\saved_model.zip'
+zip_file_path = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\saved_model.zip'
 
 convert_pb_to_zip(pb_file_path, zip_file_path)
