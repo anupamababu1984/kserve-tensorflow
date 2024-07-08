@@ -1,18 +1,21 @@
-import zipfile
 import os
+import zipfile
 
-def convert_pb_to_zip(pb_file_path, zip_file_path):
-    # Ensure the .pb file exists
-    if not os.path.isfile(pb_file_path):
-        raise FileNotFoundError(f"The file {pb_file_path} does not exist.")
-    
-    # Create a zip file and add the .pb file to it
-    with zipfile.ZipFile(zip_file_path, 'w') as zipf:
-        zipf.write(pb_file_path, os.path.basename(pb_file_path))
-    print(f"Converted {pb_file_path} to {zip_file_path}")
+def zip_folder(folder_path, output_path):
+    """
+    Zips the contents of a folder.
 
-# Replace 'yourfile.pb' and 'yourfile.zip' with your file paths
-pb_file_path = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model
-zip_file_path = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\saved_model.zip'
+    :param folder_path: The path to the folder to zip.
+    :param output_path: The path where the zipped file will be saved.
+    """
+    with zipfile.ZipFile(output_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        for root, dirs, files in os.walk(folder_path):
+            for file in files:
+                file_path = os.path.join(root, file)
+                arcname = os.path.relpath(file_path, folder_path)
+                zipf.write(file_path, arcname)
 
-convert_pb_to_zip(pb_file_path, zip_file_path)
+# Example usage:
+folder_to_zip = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model'
+output_zip_file = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\saved_model.zip'
+zip_folder(folder_to_zip, output_zip_file)
