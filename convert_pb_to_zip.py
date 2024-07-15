@@ -17,5 +17,5 @@ def zip_folder(folder_path, output_path):
 
 # Example usage:
 folder_to_zip = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model'
-output_zip_file = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\saved_model.zip'
+output_zip_file = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model.zip'
 zip_folder(folder_to_zip, output_zip_file)
