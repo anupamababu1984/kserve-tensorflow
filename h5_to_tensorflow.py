@@ -5,7 +5,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # Load the Keras model
-model = tf.keras.models.load_model('my_model.h5')
+model = tf.keras.models.load_model('trained_modelweigtedattenCT.h5')
 
 # Define the directory to save the model
 save_dir = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model\\1'
