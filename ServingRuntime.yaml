@@ -1,0 +1,23 @@
+apiVersion: serving.kserve.io/v1alpha1
+kind: ServingRuntime
+metadata:
+  name: kserve-tensorflow-serving
+spec:
+  supportedModelFormats:
+    - name: TensorFlow
+      version: "1"
+      autoSelect: true
+  containers:
+    - name: kserve-container
+      image: kserve/kserve-tensorflow-serving:latest
+      args:
+        - --model_dir=/mnt/models
+        - --http_port=8080
+      resources:
+        requests:
+          cpu: 500m
+          memory: 1Gi
+        limits:
+          cpu: "5"
+          memory: 1Gi
+
