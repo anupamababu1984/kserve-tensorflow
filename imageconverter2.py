@@ -24,4 +24,4 @@ def convert_to_json(ct_image_path):
         json.dump(data, json_file)
 
 # Usage
-convert_to_json('C:/Users/awsli/kserve-tensorflow/ben3.jpg')
+convert_to_json('C:/Users/awsli/kserve-tensorflow/squamous.png')
