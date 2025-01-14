@@ -20,7 +20,7 @@ def convert_to_json(ct_image_path):
     data = {
         "instances": img_array.tolist()
     }
-    with open('input.json', 'w') as json_file:
+    with open('input3.json', 'w') as json_file:
         json.dump(data, json_file)
 
 # Usage
