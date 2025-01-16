@@ -16,6 +16,6 @@ def zip_folder(folder_path, output_path):
                 zipf.write(file_path, arcname)
 
 # Example usage:
-folder_to_zip = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model3'
-output_zip_file = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model3.zip'
+folder_to_zip = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model4'
+output_zip_file = 'C:\\Users\\awsli\\kserve-tensorflow\\saved_model4.zip'
 zip_folder(folder_to_zip, output_zip_file)
