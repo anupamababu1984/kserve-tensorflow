@@ -3,7 +3,9 @@ kind: InferenceService
 metadata:
   name: tensorflow10
   annotations: 
+    serving.kserve.io/enable-metric-aggregation:  "true"
     serving.kserve.io/enable-prometheus-scraping: "true"
+
 spec:
   predictor:
     tensorflow:
