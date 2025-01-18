@@ -1,0 +1,12 @@
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: tensorflow2
+  annotations: 
+    serving.kserve.io/enable-metric-aggregation:  "true"
+    serving.kserve.io/enable-prometheus-scraping: "true"
+
+spec:
+  predictor:
+    tensorflow:
+      storageUri: https://raw.githubusercontent.com/anupamababu1984/kserve-tensorflow/main/saved_model2.zip
